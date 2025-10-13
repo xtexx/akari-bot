@@ -103,7 +103,7 @@ def unflatten_dict(flat_dict: Dict[str, Any], sep: str = ".") -> Dict[str, Any]:
     return nested_dict
 
 
-def is_float(text:nested_dict Any) -> bool:
+def is_float(text: Any) -> bool:
     """检查字符串是否符合 `float` 类型。"""
     try:
         float(text)
