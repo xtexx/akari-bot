@@ -31,7 +31,14 @@ m = module(
 )
 
 
-@m.command(["reload <module> ...", "load <module> ...", "unload <module> ..."], required_superuser=True)
+@m.command(
+    [
+        "reload <module> ... {{I18N:core.help.module.reload}}",
+        "load <module> ... {{I18N:core.help.module.load}}",
+        "unload <module> ... {{I18N:core.help.module.unload}}",
+    ],
+    required_superuser=True,
+)
 @m.command(
     "list [--legacy] [--image] {{I18N:core.help.module.list}}",
     options_desc={
